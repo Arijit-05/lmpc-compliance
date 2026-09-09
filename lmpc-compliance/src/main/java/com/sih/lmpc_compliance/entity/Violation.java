@@ -24,6 +24,9 @@ public class Violation {
     @Column(name = "scan_id", nullable = false)
     private UUID scanId;
 
+    @Column(name = "declaration_id")
+    private UUID declarationId;
+
     @Column(name = "declaration_type_id")
     private String declarationTypeId;
 

@@ -31,6 +31,9 @@ public class Scan {
     @Column(name = "image_path", nullable = false)
     private String imagePath;
 
+    @Column(name = "principal_display_panel_area_cm2")
+    private BigDecimal principalDisplayPanelAreaCm2;
+
     @Column(name = "net_quantity_value")
     private BigDecimal netQuantityValue;
 

@@ -1,6 +1,7 @@
 package com.sih.lmpc_compliance.dto;
 
 import java.util.List;
+import java.util.UUID;
 
 public class ComplianceResponse {
 
@@ -13,6 +14,8 @@ public class ComplianceResponse {
     private List<String> missingDeclarations;
 
     private List<String> violations;
+
+    private UUID scanId;
 
     public ComplianceResponse() {
     }
@@ -69,5 +72,13 @@ public class ComplianceResponse {
 
     public void setViolations(List<String> violations) {
         this.violations = violations;
+    }
+
+    public UUID getScanId() {
+        return scanId;
+    }
+
+    public void setScanId(UUID scanId) {
+        this.scanId = scanId;
     }
 }

@@ -22,6 +22,9 @@ public class Product {
     @Column(nullable = false)
     private String name;
 
+    @Column(name = "category_id")
+    private Integer categoryId;
+
     @Column(name = "is_imported")
     private boolean imported;
 
